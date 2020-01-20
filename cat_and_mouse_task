@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int q = scan.nextInt();
+        for(int a0 = 0; a0 < q; a0++){
+            int x = scan.nextInt();
+            int y = scan.nextInt();
+            int z = scan.nextInt();
+            int differenceOfZandX= Math.abs(z-x);
+            int differenceOfZandY= Math.abs(z-y);
+            
+            if(differenceOfZandX > differenceOfZandY)
+                System.out.println("Cat B");
+            else if(differenceOfZandX < differenceOfZandY)
+                System.out.println("Cat A");
+                else
+                System.out.println("Mouse C");
+     }
+        }
+    }
